@@ -1,4 +1,4 @@
 # marvhock.com
-Public Website by Marvin Hockenjos
+Personal website of Marvin Hockenjos
 
 For source code see https://github.com/marvhock/marvhock
