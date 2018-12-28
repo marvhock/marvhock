@@ -1,0 +1,46 @@
+# General
+baseURL = "https://www.marvhock.com/"
+languageCode = "en"
+title = "marvhock"
+
+# Configuration
+SectionPagesMenu = "main"
+
+[permalinks]
+blog = "/blog/:title"
+
+# Site Params
+[params]
+    colors = ["yellow", "blue", "green"]
+
+[[params.social]]
+name = "Github"
+title = "Marvin Hockenjos on Github"
+url = "https://github.com/marvhock"
+image = "github.svg"
+
+[[params.social]]
+name = "Twitter"
+title = "Marvin Hockenjos on Twitter"
+url = "https://twitter.com/marvhock"
+image = "twitter.svg"
+
+[[params.social]]
+name = "Linkedin"
+title = "Marvin Hockenjos on Linkedin"
+url = "https://linkedin.com/in/marvhock"
+
+[[params.social]]
+name = "Xing"
+title = "Marvin Hockenjos on Xing"
+url = "https://www.xing.com/profile/Marvin_Hockenjos/cv"
+
+[[params.social]]
+name = "Stackoverflow"
+title = "Marvin Hockenjos on Stackoverflow"
+url = "https://stackoverflow.com/users/4019739/marvhock?tab=profile"
+
+[[params.social]]
+name = "Codepen"
+title = "Marvin Hockenjos on Codepen"
+url = "https://codepen.io/marvhock/"

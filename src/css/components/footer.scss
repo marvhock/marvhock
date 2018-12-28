@@ -1,0 +1,34 @@
+.footer {
+  text-align: center;
+  color: $color-red;
+  border-top: 2px dashed;
+  padding: 25px 0 80px;
+  margin: 7rem auto 0;
+  width: 660px;
+  max-width: 90%;
+
+  @media screen and (max-width: 680px) {
+    width: auto;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: inherit;
+  }
+
+  &__social {
+    margin-top: 25px;
+
+    &-icon {
+      margin: 0 10px;
+      will-change: transform;
+      transition-property: transform;
+      transition-duration: .15s;
+      display: inline-block;
+
+      &:hover {
+        transform: scale(1.3) rotate(-3deg);
+      }
+    }
+  }
+}

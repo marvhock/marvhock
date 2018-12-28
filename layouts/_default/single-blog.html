@@ -1,0 +1,18 @@
+{{ define "main" }}
+    {{ range $index, $post := (where .Site.RegularPages "Type" .Type) }}
+        {{ if eq $post.Title .Title  }}
+            {{ .Scratch.Set "postcolor" (index (.Site.Params.colors) (mod $index 3)) }}
+        {{end}}
+    {{ end }}
+
+    <article class="teaser teaser--width-medium teaser--height-medium">
+        <img class="teaser__image" src="/images/blog/{{ .Params.image }}" alt="{{ .Title }}">
+        <div class="teaser__content">
+            <h1 class="teaser__headline text--{{ .Scratch.Get "postcolor" }}">{{ .Title }}</h1>
+            <p class="teaser__text">{{ .Description }}</p>
+        </div>
+    </article>
+    <div class="post container content">
+        {{ .Content }}
+    </div>
+{{ end }}

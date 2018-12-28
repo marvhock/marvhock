@@ -1,0 +1,20 @@
+{{ define "main" }}
+    <div class="teaser teaser--reverse teaser--height-medium teaser--center">
+        <div class="teaser__content teaser__content--reverse">
+            <h2 class="teaser__headline text--orange">Contact me</h2>
+            <p class="teaser__text">hello@marvhock.com</p>
+        </div>
+        <img class="teaser__image" src="/images/bird.jpg" alt="Contact Bird">
+    </div>
+    <section class="container content">
+        <h1 class="link-cloud__headline text--orange">Want to stay in touch?</h1>
+        <p>
+            You may want to keep up to date with what I am doing, here:<br>
+            <span class="link-cloud text--orange">
+                {{ range $.Site.Params.social }}
+                    <a class="link-cloud__item animation animation--skew" href="{{ .url }}">{{ .name }}</a>
+                {{ end }}
+            </span>
+        </p>
+    </section>
+{{ end }}

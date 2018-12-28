@@ -1,0 +1,15 @@
+<footer class="footer">
+    {{ range .Site.Menus.footer }}
+        <a class="footer__link" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+
+    <div class="footer__social">
+        {{ range $.Site.Params.social }}
+            {{ if or (eq .name "Twitter") (eq .name "Github") }}
+                <a class="footer__social-icon" href="{{ .url }}">
+                    <img src="/images/{{ .image }}" alt="{{ .title }}">
+                </a>
+            {{ end }}
+        {{ end }}
+    </div>
+</footer>

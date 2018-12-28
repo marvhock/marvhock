@@ -1,0 +1,111 @@
+.header {
+  $header-height: 100px;
+
+  border-bottom: 1px dashed $color-border;
+  background: $color-white;
+
+  @media screen and (min-width: 490px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $header-height;
+  }
+
+  &__logo {
+    display: block;
+    width: $header-height;
+    margin: 0 auto;
+
+    @media screen and (min-width: 490px) {
+      margin: 0 45px 0 0;
+    }
+
+    &-image {
+      display: block;
+      width: 100%;
+    }
+
+    path {
+      will-change: transform;
+      transition-property: transform;
+      transition-duration: .3s;
+    }
+
+    &:hover path {
+      transform: translate(-2px, -7px) scale(1.12);
+
+      &:nth-of-type(2n) {
+        transform: translate(-3px, -4px) scale(1.12);
+      }
+
+      &:nth-of-type(3n) {
+        transform: translate(-10px, -10px) scale(1.1);
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-evenly;
+
+    &-item {
+      position: relative;
+      line-height: 50px;
+      font-size: 15px;
+      padding: 0 14px;
+      display: block;
+      text-decoration: none;
+      color: $color-grey-medium;
+      transition: all .3s;
+
+      @media screen and (min-width: 490px) {
+        font-size: 18px;
+        line-height: 100px;
+      }
+
+      &--active {
+        color: $color-black;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        border-radius: 2px;
+        will-change: transform;
+        transition-property: left, width;
+        transition-duration: .15s;
+        transition-timing-function: ease-in-out;
+      }
+
+      &:nth-child(1)::before {
+        background: $color-yellow;
+      }
+
+      &:nth-child(2)::before {
+        background: $color-blue;
+      }
+
+      &:nth-child(3)::before {
+        background: $color-green;
+      }
+
+      &:nth-child(4)::before {
+        background: $color-orange;
+      }
+
+      &--active,
+      &:hover {
+        &::before {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}

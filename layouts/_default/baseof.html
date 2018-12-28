@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="{{ $.Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ .Hugo.Generator }} {{/* Outputs meta element with used Hugo version - Hugo developers need it for statistics */}}
+    <title>
+        {{ with .Params.Title }} {{ . }} | {{ end }} {{ .Site.Title }}
+    </title>
+    {{ partial "favicons.html" . }}
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="{{ relURL (printf "%s%s" "dist/" .Site.Data.webpack_assets.app.css) }}">
+    <script defer src="{{ relURL (printf "%s%s" "dist/" .Site.Data.webpack_assets.app.js) }}"></script>
+</head>
+<body>
+    {{ partial "header.html" . }}
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+</body>
+</html>

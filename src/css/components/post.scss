@@ -1,0 +1,15 @@
+.post {
+  > p:first-child:first-letter {
+    text-transform: capitalize;
+    font-size: 1.5em;
+  }
+
+  > p:first-child {
+    :first-letter {
+      text-transform: capitalize;
+      font-size: 1.5em;
+    }
+  }
+}
+
+

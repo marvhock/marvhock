@@ -1,0 +1,133 @@
+.teaser {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 25px 0;
+  border-bottom: 1px dashed $color-border;
+
+  @media screen and (max-width: 479px) {
+    flex-direction: column;
+
+    &--reverse {
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &:nth-of-type(odd) {
+    background: $color-grey-light;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--width {
+    &-medium {
+      $padding: calc((100% - 930px) / 2);
+      padding-left: $padding;
+      padding-right: $padding;
+      box-sizing: content-box;
+    }
+  }
+
+  &--height {
+    &-medium {
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+
+    &-large {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  &__image {
+    display: block;
+    border-radius: 50%;
+    width: 250px;
+    height: auto;
+    margin-bottom: 35px;
+
+    @media screen and (min-width: 619px) {
+      max-width: none;
+    }
+
+    @media screen and (min-width: 480px) {
+      max-width: 35vw;
+      margin-bottom: 0;
+    }
+
+    &--small {
+      width: 200px;
+
+      @media screen and (min-width: 480px) {
+        width: 230px;
+        max-width: 25vw;
+        margin-bottom: 0;
+      }
+    }
+
+    &--portrait {
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .3);
+      height: auto;
+      max-width: none;
+
+      @media screen and (min-width: 480px) {
+        border: 16px solid $color-yellow;
+        width: 285px;
+        margin-left: -40px;
+      }
+    }
+  }
+
+  &__content {
+    padding-right: 0;
+    padding-left: 65px;
+
+    &--reverse {
+      padding-right: 65px;
+      padding-left: 0;
+    }
+
+    @media screen and (max-width: 479px) {
+      padding: 0;
+    }
+  }
+
+  &__headline {
+    font-size: 1.9rem;
+    margin: 0 0 10px;
+
+    @media screen and (max-width: 619px) {
+      font-size: 2.2rem;
+    }
+
+    a {
+      display: inline-block;
+      color: inherit;
+    }
+  }
+
+  &__subheadline {
+    color: $color-grey;
+    font-size: 1.5rem;
+    margin-top: -10px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+
+    @media screen and (max-width: 619px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

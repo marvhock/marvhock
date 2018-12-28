@@ -1,0 +1,15 @@
+.link-cloud {
+  margin-top: 10px;
+  display: block;
+  max-width: 350px;
+
+  &__headline {
+    margin-bottom: 1.1rem;
+  }
+
+  &__item {
+    display: inline-block;
+    color: inherit;
+    margin-right: 20px;
+  }
+}

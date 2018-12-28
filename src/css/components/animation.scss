@@ -1,0 +1,19 @@
+.animation {
+  will-change: transform;
+  transition-property: transform;
+  transition-duration: .15s;
+
+  &--grow {
+    transition-duration: .25s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &--skew {
+    &:hover {
+      transform: scale(1.05) rotate(-1deg);
+    }
+  }
+}

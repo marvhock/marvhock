@@ -1,0 +1,10 @@
+# OS & IDE
+.DS_Store
+.idea
+.vscode
+
+# Frontend Setup
+/node_modules
+npm-debug.log
+/.sass-cache
+/cache
