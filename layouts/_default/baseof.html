@@ -8,6 +8,7 @@
         {{ with .Params.Title }} {{ . }} | {{ end }} {{ .Site.Title }}
     </title>
     {{ partial "favicons.html" . }}
+    <meta name="theme-color" content="{{ block "color" . }}#ececec{{ end }}">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="{{ relURL (printf "%s%s" "dist/" .Site.Data.webpack_assets.app.css) }}">
     <script defer src="{{ relURL (printf "%s%s" "dist/" .Site.Data.webpack_assets.app.js) }}"></script>

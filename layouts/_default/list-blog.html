@@ -1,3 +1,4 @@
+{{ define "color" }}#2196F3{{ end }}
 {{ define "main" }}
     {{ range $index, $post := .Pages  }}
         {{ $postColor := index (.Site.Params.colors) (mod $index 3) }}
