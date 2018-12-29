@@ -5,3 +5,12 @@
 <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#1e88e5">
 <link rel="shortcut icon" href="/images/favicons/favicon.ico">
 <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+
+{{ $pageType := .Page.Section | default .Page.Kind }}
+{{ $context := . }}
+{{ range $key, $value := .Site.Params.PageColors }}
+    {{ if eq $pageType $key }}
+        {{ $context.Scratch.Set "pagecolor" $value }}
+    {{ end }}
+{{ end }}
+<meta name="theme-color" content="{{ .Scratch.Get "pagecolor"}}">

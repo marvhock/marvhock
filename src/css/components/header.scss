@@ -4,7 +4,7 @@
   border-bottom: 1px dashed $color-border;
   background: $color-white;
 
-  @media screen and (min-width: 490px) {
+  @media screen and (min-width: $media-min-small) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
     width: $header-height;
     margin: 0 auto;
 
-    @media screen and (min-width: 490px) {
+    @media screen and (min-width: $media-min-small) {
       margin: 0 45px 0 0;
     }
 
@@ -58,7 +58,7 @@
       color: $color-grey-medium;
       transition: all .3s;
 
-      @media screen and (min-width: 490px) {
+      @media screen and (min-width: $media-min-small) {
         font-size: 18px;
         line-height: 100px;
       }
@@ -99,11 +99,20 @@
         background: $color-orange;
       }
 
-      &--active,
-      &:hover {
+      &--active {
         &::before {
           width: 100%;
           left: 0;
+        }
+      }
+
+      /* Fix bug on iOS where user needs to click twice because of the hover effect */
+      @media (hover: hover) {
+        &--active {
+          &::before {
+            width: 100%;
+            left: 0;
+          }
         }
       }
     }

@@ -11,6 +11,10 @@ $color-green: #26a69a;
 $color-orange: #fb8c00;
 $color-red: #f44336;
 $color-border: #ececec;
-$size-page-wide: 960px;
-$screen-min: 0px;
-$screen-max: 0px;
+
+$container-width: 660px;
+$media-max-small: 479px;
+$media-min-small: 480px;
+$media-max-large: 619px;
+$media-min-large: 620px;
+$media-min-extralarge: 959px;
