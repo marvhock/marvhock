@@ -108,7 +108,7 @@
 
       /* Fix bug on iOS where user needs to click twice because of the hover effect */
       @media (hover: hover) {
-        &--active {
+        &:hover {
           &::before {
             width: 100%;
             left: 0;
