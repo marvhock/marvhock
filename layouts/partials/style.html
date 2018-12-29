@@ -1,0 +1,3 @@
+<style>
+  {{readFile (printf "%s%s" "static/dist/" .Site.Data.webpack_assets.app.css) | safeCSS }}
+</style>

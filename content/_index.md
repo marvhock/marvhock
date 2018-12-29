@@ -1,5 +1,6 @@
 ---
 title: "Marvin Hockenjos"
+description: Private website of Marvin Hockenjos - Webdevelopment and User Interface Design
 menu: 
   main:
     name: About

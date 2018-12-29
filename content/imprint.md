@@ -2,6 +2,7 @@
 title: "Imprint & Privacy Policy"
 layout: default
 menu: footer
+description: Impressum und Datenschutzerklärung für marvhock.com
 ---
 
 # Impressum und Datenschutzerklärung (DE - German)
