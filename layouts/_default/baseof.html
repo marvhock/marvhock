@@ -1,18 +1,17 @@
 <!DOCTYPE HTML>
 {{ if eq .Page.Section "unterricht" }}
-  {{ .Scratch.Set "langCode" "de" }}
+    {{ .Scratch.Set "langCode" "de" }}
 {{ end }}
 <html lang="{{ .Scratch.Get "langCode" | default $.Site.LanguageCode }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="🦄 {{ .Description }}">
-    {{ .Hugo.Generator }} {{/* Outputs meta element with used Hugo version - Hugo developers need it for statistics */}}
+    {{ .Hugo.Generator }}
     <title>
         {{ with .Params.Title }} {{ . }} | {{ end }} {{ .Site.Title }}
     </title>
     {{ partial "favicons.html" . }}
-    {{ partial "fonts.html" . }}
     {{ partial "style.html" . }}
 </head>
 <body>

@@ -1,10 +1,10 @@
-{{ define "color" }}#2196F3{{ end }}
 {{ define "main" }}
     {{ range $index, $post := .Pages  }}
         {{ $postColor := index (.Site.Params.colors) (mod $index 3) }}
         <article class="teaser teaser--width-medium">
             <a href="{{ .Permalink }}">
-                <img class="teaser__image teaser__image--small" src="/images/blog/{{ .Params.image }}" alt="{{ .Title }}">
+                <img class="teaser__image teaser__image--small" alt="{{ .Title }}"
+                     src="/images/blog/{{ .Params.image }}" onerror="this.onerror=null; this.src='/images/blog/{{ replace .Params.image "webp" "jpg" }}'">
             </a>
             <div class="teaser__content">
                 <h2 class="teaser__headline text--{{ $postColor }}">
