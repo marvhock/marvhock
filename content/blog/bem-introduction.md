@@ -1,5 +1,4 @@
 ---
-layout: single-blog
 title: "Working with BEM"
 date: 2018-12-20T20:00:46+01:00
 description: Fighting CSS specificity can be a pain. BEM helps separating CSS scope by naming convention.

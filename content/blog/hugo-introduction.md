@@ -1,5 +1,4 @@
 ---
-layout: single-blog
 title: "Building static pages with Hugo"
 date: 2018-12-18T19:50:33+01:00
 description: The super fast static site generator hugo, written in Go, is your choice for building non-dynamic pages

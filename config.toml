@@ -6,9 +6,6 @@ title = "marvhock"
 # Configuration
 SectionPagesMenu = "main"
 
-[permalinks]
-  blog = "/blog/:title"
-
 # Site Params
 [params]
   colors = ["yellow", "blue", "green"]

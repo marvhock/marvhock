@@ -1,0 +1,20 @@
+{{ define "main" }}
+    <div class="content container">
+        <h1>{{ .Title }}</h1>
+    </div>
+    {{ range $index, $post := .Pages  }}
+    {{ $postColor := index (.Site.Params.colors) (mod $index 3) }}
+    <article class="teaser teaser--width-medium">
+        <a href="{{ .Permalink }}">
+            <img class="teaser__image teaser__image--small" alt="{{ .Title }}"
+                 src="/images/blog/{{ .Params.image }}" onerror="this.onerror=null; this.src='/images/blog/{{ replace .Params.image "webp" "jpg" }}'">
+        </a>
+        <div class="teaser__content">
+            <h2 class="teaser__headline text--{{ $postColor }}">
+                <a class="animation animation--grow" href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+            <p class="teaser__text">{{ .Description }}</p>
+        </div>
+    </article>
+    {{ end }}
+{{ end }}

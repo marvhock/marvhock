@@ -1,6 +1,6 @@
 ---
 title: "Imprint & Privacy Policy"
-layout: default
+layout: imprint
 menu: footer
 description: Impressum und Datenschutzerklärung für marvhock.com
 ---
@@ -12,10 +12,10 @@ description: Impressum und Datenschutzerklärung für marvhock.com
 E-Mail: hello@marvhock.com
 
 ## Verantwortlich für den Inhalt
-_Nach § 55 Abs. 2 RStV:_  
-Marvin Hockenjos  
-Albrecht-Dürer-Str. 65  
-50259 Pulheim  
+_Nach § 55 Abs. 2 RStV:_
+Marvin Hockenjos
+Albrecht-Dürer-Str. 65
+50259 Pulheim
 
 ## Haftung für Inhalte
 Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
