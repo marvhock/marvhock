@@ -6,11 +6,5 @@
 <link rel="shortcut icon" href="/images/favicons/favicon.ico">
 <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
 
-{{ $pageType := .Page.Section | default .Page.Kind }}
-{{ $context := . }}
-{{ range $key, $value := .Site.Params.PageColors }}
-    {{ if eq $pageType $key }}
-        {{ $context.Scratch.Set "pagecolor" $value }}
-    {{ end }}
-{{ end }}
-<meta name="theme-color" content="{{ .Scratch.Get "pagecolor"}}">
+{{ $pageColor := (.Page.Section | default .Page.Type) | index .Site.Params.pageColors }}
+<meta name="theme-color" content="{{ $pageColor | default .Site.Params.pageColors.Default }}">

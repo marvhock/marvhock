@@ -1,5 +1,5 @@
 ---
-title: "Imprint & Privacy Policy"
+title: Imprint & Privacy Policy
 layout: imprint
 menu: footer
 description: Impressum und Datenschutzerklärung für marvhock.com

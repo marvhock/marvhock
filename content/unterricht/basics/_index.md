@@ -1,6 +1,6 @@
 ---
 layout: unterricht-list
-title: "Basics"
+title: Basics
 description: Basics.
 ---
 Basics Here

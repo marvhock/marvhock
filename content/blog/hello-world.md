@@ -1,5 +1,5 @@
 ---
-title: "Hello World"
+title: Hello World
 date: 2018-12-17T21:00:00+01:00
 description: Its alive! Welcome to my first blog entry, seeing the motivation behind building this site.
 image: kueken.webp

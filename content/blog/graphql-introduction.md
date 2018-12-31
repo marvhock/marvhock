@@ -1,5 +1,5 @@
 ---
-title: "Introduction to GraphQL"
+title: Introduction to GraphQL
 date: 2018-12-19T20:00:46+01:00
 description: What are the differences between GraphQL and Rest. That you will learn in this article
 image: graphql.png

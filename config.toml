@@ -11,7 +11,8 @@ SectionPagesMenu = "main"
   colors = ["yellow", "blue", "green"]
 
 [params.pageColors]
-  home = "#ffca28"
+  default = "#ececec"
+  about = "#ffca28"
   blog = "#2196F3"
   unterricht = "#26a69a"
   contact = "#fb8c00"
