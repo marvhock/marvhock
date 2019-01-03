@@ -2,12 +2,42 @@
   > p:first-child:first-letter {
     text-transform: capitalize;
     font-size: 1.5em;
+    line-height: 0;
   }
 
-  > p:first-child {
-    :first-letter {
-      text-transform: capitalize;
-      font-size: 1.5em;
+  a:hover {
+    text-decoration: underline;
+  }
+
+  &--yellow {
+    a:link,
+    a:visited,
+    a:active {
+      color: $color-yellow;
+    }
+  }
+
+  &--blue {
+    a:link,
+    a:visited,
+    a:active {
+      color: $color-blue;
+    }
+  }
+
+  &--green {
+    a:link,
+    a:visited,
+    a:active {
+      color: $color-green;
+    }
+  }
+
+  &--orange {
+    a:link,
+    a:visited,
+    a:active {
+      color: $color-orange;
     }
   }
 }

@@ -1,8 +1,21 @@
 ---
 title: Hello World
 date: 2018-12-17T21:00:00+01:00
-description: Its alive! Welcome to my first blog entry, seeing the motivation behind building this site.
+description: Its alive! Welcome to my first blog post and see the motivation behind building this site.
 image: kueken.webp
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+The motivation to create this site was mainly to provide lecture scripts for my students, as well as a place where they 
+can re-read stuff from my lessons or get additional theoretical input or practical examples. 
+
+I prefer reading and structuring information like websites or wikis do, so I decided I’ll maintain and provide the 
+information I can give in the same way instead manually handing out PDF scripts. You will find all that in german only 
+for now under [Unterricht](/unterricht).
+
+Additionally sharing some knowledge about specific topics will sporadically appear in the [Blog](/blog) section here.
+I think its also a good opportunity to have a well written and structured explanation about a specific topic at hand, 
+which you can easily share with colleagues and people interested.
+
+Topics will mainly be about web development and related subjects.
+
+If you are interested in the source code of this site, [check it out on github](https://github.com/marvhock/marvhock).

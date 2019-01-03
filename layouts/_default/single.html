@@ -4,16 +4,17 @@
             {{ .Scratch.Set "postcolor" (index (.Site.Params.colors) (mod $index 3)) }}
         {{end}}
     {{ end }}
+    {{ $postColor := .Scratch.Get "postcolor" }}
 
     <article class="teaser teaser--width-medium teaser--height-medium">
         <img class="teaser__image" alt="{{ .Title }}"
              src="/images/blog/{{ .Params.image }}" onerror="this.onerror=null; this.src='/images/blog/{{ replace .Params.image "webp" "jpg" }}'">
         <div class="teaser__content">
-            <h1 class="teaser__headline text--{{ .Scratch.Get "postcolor" }}">{{ .Title }}</h1>
+            <h1 class="teaser__headline text--{{ $postColor }}">{{ .Title }}</h1>
             <p class="teaser__text">{{ .Description }}</p>
         </div>
     </article>
-    <div class="post container content">
+    <div class="post post--{{ $postColor }} container content">
         {{ .Content }}
     </div>
 {{ end }}
