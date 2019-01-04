@@ -18,4 +18,4 @@ which you can easily share with colleagues and people interested.
 
 Topics will mainly be about web development and related subjects.
 
-If you are interested in the source code of this site, [check it out on github](https://github.com/marvhock/marvhock).
+You may want to check out the [source code of this site](https://github.com/marvhock/marvhock) 🧐.
